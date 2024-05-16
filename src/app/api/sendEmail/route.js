@@ -1,37 +1,44 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer'
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 export async function POST(request) {
+    console.log(process.env.SENDGRID_API_KEY);
     try {
-        const { subject, message } = await request.json();
+        const { name, email, url, project_details } = await request.json();
 
         const transporter = nodemailer.createTransport({
-            service: 'zoho',
             host: 'smtp.sendgrid.net',
             port: 587,
-            secure: true,
+            secureConnection: false,
             auth: {
                 user: 'apikey',
                 pass: process.env.SENDGRID_API_KEY
+            },
+            tls: {
+                ciphers:'SSLv3'
             }
         })
 
         const mailOption = {
             from: 'unalisi.dev@gmail.com',
             to: 'ichbinunal@gmail.com',
-            subject: "Send Email Tutorial",
+            subject: "New Email from Nextjs Landing Page",
             html: `
-        <h3>Hello Augustine</h3>
-        <li> title: ${subject}</li>
-        <li> message: ${message}</li> 
-        `
+                    <h3>New email from ${name}</h3>
+                    <li>Email: ${email}</li>
+                    <li>Web-site URL: ${url}</li>
+                    <li>Project Details: ${project_details}</li> 
+                  `
         }
 
         await transporter.sendMail(mailOption)
 
         return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
     } catch (error) {
+        console.log(error)
         return NextResponse.json({ message: "Failed to Send Email" }, { status: 500 })
     }
 }
-
