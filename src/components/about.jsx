@@ -12,7 +12,7 @@ export function About() {
           We love what we do and create partnerships with our clients to ensure their digital transformation is positioned for long-term success. We believe that the human dimensions essential to start any successful project and that this is where splendid emotional relationships between the company and people are born.
         </p>
       </div>
-      <Image className="w-full md:w-96 lg:w-2/3 xl:w-3/4 2xl:w-4/5 mx-auto my-4" src={mainImg} alt="Second Image in Page" />
+      <Image className="w-full md:w-96 lg:w-2/3 xl:w-3/4 2xl:w-4/5 mx-auto my-4" src={mainImg} alt="Second image in page" />
     </div>
   );
 }
