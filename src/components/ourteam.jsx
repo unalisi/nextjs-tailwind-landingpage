@@ -8,7 +8,7 @@ export function Team() {
     <div>
       <div className="w-full md:w-96 lg:w-2/3 xl:w-3/4 2xl:w-4/5 mx-auto">
         <h1 className="md:text-xl font-bold mt-20 mb-10 text-left md:text-center md:ml-0 lg:text-4xl lg:mb-20">
-          Meet the Heroes Behind the Magic
+          Meet the heroes behind the magic
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="shadow-xl flex flex-col justify-center ">
