@@ -23,8 +23,8 @@ export async function POST(request) {
         })
 
         const mailOption = {
-            from: 'unalisi.dev@gmail.com',
-            to: 'ichbinunal@gmail.com',
+            from: process.env.MAIL_FROM,
+            to: process.env.MAIL_TO,
             subject: "New Email from Nextjs Landing Page",
             html: `
                     <h3>New email from ${name}</h3>
