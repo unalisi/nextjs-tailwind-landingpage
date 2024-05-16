@@ -18,8 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -28,6 +26,21 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Project Images
+
+Home Page
+![image](https://github.com/unalisi/nextjs-tailwind-landingpage/assets/94193986/806b327e-56b2-4a52-91ef-e373c39d445f)
+
+About Section
+![image](https://github.com/unalisi/nextjs-tailwind-landingpage/assets/94193986/87184f80-ca70-4a2f-9f3a-d8995332f7c2)
+
+Our Team Section
+![image](https://github.com/unalisi/nextjs-tailwind-landingpage/assets/94193986/f9ba3c99-e126-4475-a997-c3423704fc46)
+
+Contact Section
+![image](https://github.com/unalisi/nextjs-tailwind-landingpage/assets/94193986/7b88037c-b1b8-454c-a706-9cb6ecc3e7d5)
+
 
 ## Deploy on Vercel
 
