@@ -10,8 +10,7 @@ export function Footer() {
       <div className="container mx-auto flex justify-center items-center">
         <div className="w-1/2">
           <h1 className="text-2xl font-bold mb-2 text-black">Ünal İSİ</h1>
-          <p className="mb-2 text-lg text-black">Frontend Developer</p>
-          <p className="text-md text-black">Piton Technology Intern Task ® 2024</p>
+          <p className="mb-2 text-lg text-black">Frontend Developer ® 2024</p>
         </div>
         <div className="w-1/2 flex justify-center items-center space-x-4">
           <Link href="https://www.instagram.com/unalisi" legacyBehavior>
